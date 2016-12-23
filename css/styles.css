@@ -1,0 +1,28 @@
+
+
+div.container{
+    width: 800px;
+    border: 2px solid red;
+}
+
+div.testImg{
+    width: 80%;
+    border: 2px solid black;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.testImg img{
+    padding: 0px;
+    margin: 0px;
+}
+
+div.testForme{
+    width: 50px;
+    height: 100px;
+    background-color: green;
+    border: 1px solid blue;
+    border-radius: 0 50px 50px 0;
+}
