@@ -15,20 +15,30 @@
         <div id="pageWrapper">
             <header class="pageBlock">
                 <div class="navigationBarContainer">
-                    <div class="logo">
+                    <div class="logoContainer">
                         <img src="images/logo.png" alt="Logo Web Agency" />
                     </div>
                     <nav>
-                        <ul>
-                            <li>Accueil</li>
-                            <li>Services</li>
-                            <li>Portfolio</li>
-                            <li>Contact</li>
-                        </ul>
+   
+                            <a href="#">Accueil</a></li>
+                            <a href="#">Services</a></li>
+                            <a href="#">Portfolio</a></li>
+                            <a href="#">Contact</a></li>
+                        
                     </nav>
                 </div>
                 <div class="carousselContainer">
                     <img src="images/slider/bg1.jpg" alt="Petite fille" />
+                    <div class="carousselOverlayContainer">
+                        <div class="carouselButtonRight"></div>
+                        <div class="carouselOverlay">
+                            <h1>WEBAGENCY : L'AGENCE DE TOUS VOS PROJETS!</h1>
+                            <p>Vous avez un projet web? La WebAgency vous aide à le réaliser!</p>
+                            <button type="button">Plus d'infos</button>
+                        </div>
+                        <div class="carouselButtonLeft"></div>
+                    </div>
+                    <div class="carouselPosition"></div>
                 </div>
             </header>
             
@@ -76,7 +86,63 @@
                 </div>
             </section>
             
-            <section class="pageBlock nosProjets"
+            <section class="pageBlock nosProjets">
+                <div class="sectionTitreContainer">
+                    <h2>NOS Projets</h2>
+                    <div class="buttonSeparator">*</div>
+                    <p>
+                        Lorem ipsum solor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                </div>
+                <div class="portfolioSelectorContainer">
+                    <button type="button">All Works</button>
+                    <button type="button">Creative</button>
+                    <button type="button">Corporate</button>
+                    <button type="button">Portfolio</button>
+                </div>
+                <div class="portfolioContainer">
+                    <div class="portfolioImgContainer">
+                        <img src="images/portfolio/01.jpg" alt="portfolio image 1" />
+                    </div>
+                    <div class="portfolioImgContainer">
+                        <img src="images/portfolio/02.jpg" alt="portfolio image 1" />
+                    </div>
+                    <div class="portfolioImgContainer">
+                        <img src="images/portfolio/03.jpg" alt="portfolio image 1" />
+                    </div>
+                    <div class="portfolioImgContainer">
+                        <img src="images/portfolio/04.jpg" alt="portfolio image 1" />
+                    </div>
+                    <div class="portfolioImgContainer">
+                        <img src="images/portfolio/05.jpg" alt="portfolio image 1" />
+                    </div>
+                    <div class="portfolioImgContainer">
+                        <img src="images/portfolio/06.jpg" alt="portfolio image 1" />
+                    </div>
+                    <div class="portfolioImgContainer">
+                        <img src="images/portfolio/07.jpg" alt="portfolio image 1" />
+                    </div>
+                    <div class="portfolioImgContainer">
+                        <img src="images/portfolio/08.jpg" alt="portfolio image 1" />
+                    </div>
+                </div>
+            </section>
+            
+            <footer>
+                <form>
+                    <h2>Contact Info</h3>
+                    <div class="address">
+                        <h3 class="address">WebAgency SAS</h3>
+                        <span class="address">25 Rue d'Hauteville 75010 Paris</span><br />
+                        <span class="address">Tel : 01 02 03 04 05</span>
+                    </div>
+                    <input type="text" placeholder="name" name="name" />
+                    <input type="email" placeholder="Email" name="email" />
+                    <input type="text" placeholder="Subject" name="subject" />
+                    <textarea placeholder="Message" name="message"></textarea>
+                    <input type="submit" value="Send Message"/>
+                </form>
+            </footer>
             
         </div>
 

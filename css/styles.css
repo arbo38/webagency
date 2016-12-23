@@ -1,8 +1,121 @@
+/*-------------------- PARAMETRES GENENERAUX--------------------*/
+body{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+div#pageWrapper{
+    width: 80%;
+    border: 1px solid blue;
+}
+
+/*-------------------- HEADER--------------------*/
+header{
+    border: 1px solid red;
+    padding: 0px;
+}
+
+/*--- Navigation---*/
+div.navigationBarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+div.logoContainer{
+    margin-left: 15%;
+}
+
+nav{
+    margin-right: 15%;
+    margin-right: 15%;
+    height: 100px;
+    padding: 0px;
+    display: flex;
+
+}
+
+nav a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+    color: #341c1d;
+    font-family: sans-serif;
+}
+
+nav a:hover{
+    border-top: 3px solid #80b7ce;
+    color: #242424;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+/*--- Carousel ---*/
+
+div.carousselContainer{
+    border: 3px solid green;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+div.carousselContainer img{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+div.carouselPosition{
+    width: 100%;
+    height: 10px;
+    background: black;
+    position: absolute;
+    bottom: 0px;
+    z-index: 15;
+}
+
+div.carousselOverlayContainer{
+    position: absolute;
+    top: 30%;
+}
+
+div.carouselOverlay{
+    
+}
+
+h1{
+    
+}
+
+div.carouselOverlay p{
+    
+}
+
+div.carouselOverlay button{
+    
+}
+
+div.carouselButtonRight{
+    
+}
+
+div.carouselButtonLeft{
+    
+}
 
 
+
+
+/* TESTING */
 div.container{
     width: 800px;
-    border: 2px solid red;
+    border: px solid red;
 }
 
 div.testImg{
