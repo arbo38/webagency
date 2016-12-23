@@ -1,7 +1,7 @@
 
 Les icones et éléments graphique :
 
-Font-Awesome : 
+Font-Awesome : C'est génial!
 
 Bulle => &bull
 Graphe => fa-line-chart
