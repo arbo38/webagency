@@ -1,30 +1,23 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Bienvenue chez WebAgency</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <div class="testForme"></div>
-        
-        <div class="container">
-            <div class="testImg">
-                <img src="images/slider/bg1.jpg" style="width:600px;" />
-                <img src="images/slider/bg2.jpg" style="width:100%;" />
-            </div>
-        </div>
+<body>
 
-        
-        
-        <script>
-            $(document).ready(function(){
-               
-            });
-        </script>
-    </body>
+<h1>My First Google Map</h1>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), 
+    zoom: 10
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+</body>
 </html>

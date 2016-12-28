@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
     </head>
     
     <body>
@@ -23,7 +24,7 @@
                             <a href="#">Accueil</a></li>
                             <a href="#">Services</a></li>
                             <a href="#">Portfolio</a></li>
-                            <a href="#">Contact</a></li>
+                            <a href="#mapContainer">Contact</a></li>
                         
                     </nav>
                 </div>
@@ -129,19 +130,24 @@
             </section>
             
             <footer>
+                <div id="mapContainer">
+                    
+                
+                </div>
                 <form>
-                    <h2>Contact Info</h3>
-                    <div class="address">
-                        <h3 class="address">WebAgency SAS</h3>
-                        <span class="address">25 Rue d'Hauteville 75010 Paris</span><br />
-                        <span class="address">Tel : 01 02 03 04 05</span>
-                    </div>
-                    <input type="text" placeholder="name" name="name" />
-                    <input type="email" placeholder="Email" name="email" />
-                    <input type="text" placeholder="Subject" name="subject" />
-                    <textarea placeholder="Message" name="message"></textarea>
-                    <input type="submit" value="Send Message"/>
-                </form>
+                        <h2>Contact Info</h3>
+                        <div class="address">
+                            <h3 class="address">WebAgency SAS</h3>
+                            <span class="address">25 Rue d'Hauteville 75010 Paris</span><br />
+                            <span class="address">Tel : 01 02 03 04 05</span>
+                        </div>
+                        <input type="text" placeholder="name" name="name" />
+                        <input type="email" placeholder="Email" name="email" />
+                        <input type="text" placeholder="Subject" name="subject" />
+                        <textarea placeholder="Message" name="message"></textarea>
+                        <input type="submit" value="Send Message"/>
+                    </form>
+                
             </footer>
             
         </div>
@@ -150,8 +156,12 @@
         
         <script>
             $(document).ready(function(){
-               
+                webAgency(); 
             });
+
         </script>
+        <script src="js/webAgency.js">
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
     </body>
 </html>

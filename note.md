@@ -3,7 +3,7 @@
 Les points à approfondir pour la réussite de ce Projet : 
 
 css avancé => Création du caroussel avec des transitions
-API google maps 
+API google maps => use static api
 SEO
 metatag-sociaux
 
