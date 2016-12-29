@@ -1,10 +1,26 @@
+/*
+Couleurs:
+    Bleu claire : #5dadd3 ;
+    Bleu foncé : #669db6 ;
+    Gris texte : #6e7071 ;
+
+
+*/
+
+
 /*-------------------- PARAMETRES GENENERAUX--------------------*/
+
 body{
     display: flex;
     justify-content: center;
     padding: 0px;
     margin: 0px;
     font-family: Arial;
+    color: #6e7071;
+}
+
+h2, h3, h4{
+    color: black;
 }
 
 div#pageWrapper{
@@ -111,6 +127,98 @@ div.carouselButtonLeft{
 
 }
 
+/*-------------------- Section I : Nos services--------------------*/
+
+section.NosServices{
+}
+
+/*--- Section I : Titre ---*/
+
+div.sectionTitreContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.sectionTitreContainer h2{
+    font-size: 2em;
+}
+
+div.buttonSeparator{
+
+}
+
+div.sectionTitreContainer p{
+    width: 50%;
+    text-align: center;
+}
+
+/*--- Section I : Corps ---*/
+
+div.sectionMainContainer{
+    display: flex;
+    height: 400px;
+}
+
+div.sectionMainLeft{     /* Partie gauche*/
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.sectionMainLeft img{
+}
+
+div.sectionMainRight{   /* Partie droite*/
+    width: 50%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.sectionMainRightParagraph{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+div.illustration, div.separator, div.presentation{
+    margin: 6px;
+}
+
+div.illustration{
+}
+
+div.separator{
+
+}
+
+span.fa{
+    color: #5dadd3;
+}
+
+div.illustration span{
+    font-size: 1.5em;
+}
+
+
+div.presentation{
+    width: 90%;
+}
+
+h3.sectionMainRight{
+    margin-bottom: 0px;
+}
+
+p.sectionMainRight{
+    margin-top: 5px;
+    font-size: 0.9em;
+    text-align: justify;
+}
+
 /*-------------------- Footer--------------------*/
 
 footer{
@@ -158,10 +266,6 @@ h3.address{
   margin: 0px 0px 3px 0px;
   font-size: 1.1em;
 }
-
-
-
-
 
 form{
     display: flex;
