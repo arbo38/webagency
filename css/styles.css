@@ -129,7 +129,7 @@ div.carouselButtonLeft{
 
 /*-------------------- Section I : Nos services--------------------*/
 
-section.NosServices{
+section.nosServices{
 }
 
 /*--- Section I : Titre ---*/
@@ -219,6 +219,106 @@ p.sectionMainRight{
     text-align: justify;
 }
 
+/*-------------------- Section II : Nos Projets--------------------*/
+
+section.nosProjets{
+    background-color: #f5f5f5;
+}
+
+/*--- Section II : Titre ---*/
+    /* Paramètres identique à section I*/
+
+
+section.nosProjets div.sectionTitreContainer{
+
+}
+
+/*--- Section II : Corps ---*/
+
+    /*--- Menu Portfolio---*/
+
+div.portfolioSelectorContainer{
+    display: flex;
+    justify-content: center;
+}
+
+div.portfolioMenuContainer{
+
+    display: flex;
+    justify-content: center;;
+}
+
+a.portfolio{
+    background: #e5e5e5;
+    text-decoration: none;
+    color: #6b6e72;
+    font-size: 1.1em;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px;
+    padding: 0 10px 0 10px;
+    position: relative;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+a.portfolio span.fa{
+    align-self: center;
+    position: relative;
+    bottom: -10px;
+}
+
+a.portfolio:first-child{
+    border-radius: 5px 0px 0px 5px;
+}
+
+a.portfolio:first-child:after{
+    font-family: FontAwesome;
+    content: "\f0d7";
+    position: absolute;
+    bottom: -30px;
+}
+
+a.portfolio:last-child{
+    border-radius: 0px 5px 5px 0px;
+}
+
+a.portfolio:hover{
+    background: #5dadd3;
+    color: white;
+}
+
+
+
+
+
+    /*--- Portfolio ---*/
+
+div.portfolioContainer{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
+div.zbra{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.portfolioImgContainer{
+    width: 23%;
+    margin: 10px;
+}
+
+div.portfolioImgContainer img{
+    width: 100%;
+    display: block;
+}
 /*-------------------- Footer--------------------*/
 
 footer{
