@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-    
+
     <head>
         <title>Bienvenue chez WebAgency</title>
         <meta charset="UTF-8">
@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        
+
     </head>
-    
+
     <body>
         <div id="pageWrapper">
             <header class="pageBlock">
@@ -20,12 +20,12 @@
                         <img src="images/logo.png" alt="Logo Web Agency" />
                     </div>
                     <nav>
-   
+
                             <a href="#">Accueil</a></li>
                             <a href="#">Services</a></li>
                             <a href="#">Portfolio</a></li>
                             <a href="#mapContainer">Contact</a></li>
-                        
+
                     </nav>
                 </div>
                 <div class="carousselContainer">
@@ -42,7 +42,7 @@
                     <div class="carouselPosition"></div>
                 </div>
             </header>
-            
+
             <section class="pageBlock NosServices">
                 <div class="sectionTitreContainer">
                     <h2>NOS SERVICES</h2>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="pageBlock nosProjets">
                 <div class="sectionTitreContainer">
                     <h2>NOS Projets</h2>
@@ -128,35 +128,37 @@
                     </div>
                 </div>
             </section>
-            
+
             <footer>
                 <div id="mapContainer">
-                    
-                
+
+
                 </div>
-                <form>
-                        <h2>Contact Info</h3>
-                        <div class="address">
-                            <h3 class="address">WebAgency SAS</h3>
-                            <span class="address">25 Rue d'Hauteville 75010 Paris</span><br />
-                            <span class="address">Tel : 01 02 03 04 05</span>
-                        </div>
-                        <input type="text" placeholder="name" name="name" />
-                        <input type="email" placeholder="Email" name="email" />
-                        <input type="text" placeholder="Subject" name="subject" />
-                        <textarea placeholder="Message" name="message"></textarea>
-                        <input type="submit" value="Send Message"/>
-                    </form>
-                
+                <div id="formContainer" class="contactElt">
+                    <h2 class="contactElt">Contact Info</h2>
+                    <div class="address contactElt">
+                        <h3 class="address">WebAgency SAS</h3>
+                        <span class="address">25 Rue d'Hauteville 75010 Paris</span><br />
+                        <span class="address">Tel : 01 02 03 04 05</span>
+                    </div>
+                    <form class="contactElt">
+                          <input type="text" placeholder="Name" name="name" class="formElt" />
+                          <input type="email" placeholder="Email" name="email" class="formElt" />
+                          <input type="text" placeholder="Subject" name="subject" class="formElt" />
+                          <textarea placeholder="Message" name="message" class="formElt formTextArea" rows="8"></textarea>
+                          <input type="submit" value="Send Message" id="sendButton"/>
+                      </form>
+                </div>
+
             </footer>
-            
+
         </div>
 
-        
-        
+
+
         <script>
             $(document).ready(function(){
-                webAgency(); 
+                webAgency();
             });
 
         </script>

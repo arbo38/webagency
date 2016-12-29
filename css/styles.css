@@ -4,12 +4,14 @@ body{
     justify-content: center;
     padding: 0px;
     margin: 0px;
+    font-family: Arial;
 }
 
 div#pageWrapper{
     width: 80%;
     border: 1px solid blue;
 }
+
 
 /*-------------------- HEADER--------------------*/
 header{
@@ -86,27 +88,27 @@ div.carousselOverlayContainer{
 }
 
 div.carouselOverlay{
-    
+
 }
 
 h1{
-    
+
 }
 
 div.carouselOverlay p{
-    
+
 }
 
 div.carouselOverlay button{
-    
+
 }
 
 div.carouselButtonRight{
-    
+
 }
 
 div.carouselButtonLeft{
-    
+
 }
 
 /*-------------------- Footer--------------------*/
@@ -123,15 +125,81 @@ div#mapContainer{
     border: 1px solid green;
 }
 
-form{
-    background: yellow;
-    position: absolute;
-    top: 50px;
-    right: 150px;
-    width: 30%;
-    height: 400px;
+div#formContainer{
+  border-radius: 3px;
+  position: absolute;
+  padding: 10px 0 10px 0;
+  top: 50px;
+  right: 150px;
+  width: 22%;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
+.contactElt{
+  margin: 0px 15px 0px 15px ;
+}
+
+div#formContainer h2{
+  margin-bottom: 0px;
+}
+
+div.address{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #6e7071;
+  font-size: 0.8em;
+}
+
+h3.address{
+  margin: 0px 0px 3px 0px;
+  font-size: 1.1em;
+}
+
+
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formElt{
+  margin-top: 10px;
+  margin-bottom: : 10px;
+  padding: 5px 8px 5px 8px;
+  border-radius: 4px;
+  border: 1px solid #a9abab;
+
+}
+
+.formTextArea{
+
+}
+
+input#sendButton{
+  width: 40%;
+  background-color: #5dadd3;
+  color: white;
+  padding: 6px 4px 6px 4px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 3px #669db6;
+  border: none;
+  margin-top: 10px;
+}
+
+input#sendButton:active{
+
+  background-color: white;
+  color: #5dadd3;
+
+}
 
 /* TESTING */
 div.container{
