@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     </head>
 
@@ -112,37 +112,53 @@
                 </div>
                 <div class="portfolioSelectorContainer">
                     <div class="portfolioMenuContainer">
-                        <a href="#" class="portfolio"><span>All Works</span></span></a>
-                        <a href="#" class="portfolio"><span>Creative</span> <span class="fa fa-caret-down"></span></a>
-                        <a href="#" class="portfolio"><span>Corporate</span> <span class="fa fa-caret-down"></span></a>
-                        <a href="#" class="portfolio"><span>Portfolio</span><span class="fa fa-caret-down"></span></a>
+                        <input type="radio" id="all" name="folioSelector" class="folioSelector" checked="checked"><label for="all">All Works</label>
+                        <input type="radio" id="creative" name="folioSelector" class="folioSelector"><label for="creative">Créative</label>
+                        <input type="radio" id="corporate" name="folioSelector" class="folioSelector"><label for="corporate">Corporate</label>
+                        <input type="radio" id="portfolio" name="folioSelector" class="folioSelector"><label for="portfolio">Portfolio</label>
                     </div>
                 </div>
                 <div class="portfolioContainer">
                     <div class="zbra">
-                        <div class="portfolioImgContainer">
-                            <img src="images/portfolio/01.jpg" alt="portfolio image 1" />
+                        <div class="portfolioImgContainer all creative notCorporate portfolio">
+                            <a href="#" title="projet 1">
+                                <img src="images/portfolio/01.jpg" alt="portfolio image 1" />
+                            </a>
                         </div>
-                        <div class="portfolioImgContainer">
-                            <img src="images/portfolio/02.jpg" alt="portfolio image 1" />
+                        <div class="portfolioImgContainer all creative corporate notPortfolio">
+                            <a href="#" title="projet 2">
+                                <img src="images/portfolio/02.jpg" alt="portfolio image 1" />
+                            </a>
                         </div>
-                        <div class="portfolioImgContainer">
-                            <img src="images/portfolio/03.jpg" alt="portfolio image 1" />
+                        <div class="portfolioImgContainer all corporate portfolio notCreative">
+                            <a href="#" title="projet 3">
+                                <img src="images/portfolio/03.jpg" alt="portfolio image 1" />
+                            </a>
                         </div>
-                        <div class="portfolioImgContainer">
-                            <img src="images/portfolio/04.jpg" alt="portfolio image 1" />
+                        <div class="portfolioImgContainer all portfolio notCreative notCorporate">
+                            <a href="#" title="projet 4">
+                                <img src="images/portfolio/04.jpg" alt="portfolio image 1" />
+                            </a>
                         </div>
-                        <div class="portfolioImgContainer">
-                            <img src="images/portfolio/05.jpg" alt="portfolio image 1" />
+                        <div class="portfolioImgContainer all portfolio notCreative notCorporate">
+                            <a href="#" title="projet 5">
+                                <img src="images/portfolio/05.jpg" alt="portfolio image 1" />
+                            </a>
                         </div>
-                        <div class="portfolioImgContainer">
-                            <img src="images/portfolio/06.jpg" alt="portfolio image 1" />
+                        <div class="portfolioImgContainer all creative notCorporate portfolio">
+                            <a href="#" title="projet 6">
+                                <img src="images/portfolio/06.jpg" alt="portfolio image 1" />
+                            </a>
                         </div>
-                        <div class="portfolioImgContainer">
-                            <img src="images/portfolio/07.jpg" alt="portfolio image 1" />
+                        <div class="portfolioImgContainer all creative portfolio corporate ">
+                            <a href="#" title="projet 7">
+                                <img src="images/portfolio/07.jpg" alt="portfolio image 1" />
+                            </a>
                         </div>
-                        <div class="portfolioImgContainer">
-                            <img src="images/portfolio/08.jpg" alt="portfolio image 1" />
+                        <div class="portfolioImgContainer all creative portfolio corporate">
+                            <a href="#" title="projet 8">
+                                <img src="images/portfolio/08.jpg" alt="portfolio image 1" />
+                            </a>
                         </div>
                     </div>
                 </div>

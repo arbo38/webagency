@@ -17,4 +17,28 @@ function webAgency(){
     }
 
     myMap();
+
+    function folioSelector(){
+        $(".folioSelector").change(function(){
+            if(this.checked){
+                if(this.id == "all"){
+                    $("div.all").fadeIn("slow");
+                }
+                else if (this.id == "creative") {
+                    $("div.notCreative").fadeOut("slow");
+                    $("div.creative").fadeIn("slow");
+                }
+                else if (this.id == "corporate") {
+                    $("div.notCorporate").fadeOut("slow");
+                    $("div.corporate").fadeIn("slow");
+                }
+                else if (this.id == "portfolio") {
+                    $("div.notPortfolio").fadeOut("slow");
+                    $("div.portfolio").fadeIn("slow");
+                }
+            }
+        })
+    }
+
+    folioSelector();
 }

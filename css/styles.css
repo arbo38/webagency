@@ -25,13 +25,11 @@ h2, h3, h4{
 
 div#pageWrapper{
     width: 80%;
-    border: 1px solid blue;
 }
 
 
 /*-------------------- HEADER--------------------*/
 header{
-    border: 1px solid red;
     padding: 0px;
 }
 
@@ -64,13 +62,15 @@ nav a{
     text-decoration: none;
     color: #341c1d;
     font-family: sans-serif;
+
 }
 
 nav a:hover{
     border-top: 3px solid #80b7ce;
     color: #242424;
-    font-weight: 500;
     line-height: 100px;
+    height: 97px;
+    line-height: 94px;
 }
 
 /*--- Carousel ---*/
@@ -128,6 +128,10 @@ div.carouselButtonLeft{
 }
 
 /*-------------------- Section I : Nos services--------------------*/
+
+section.pageBlock{
+    padding: 20px 0 20px 0;
+}
 
 section.nosServices{
 }
@@ -243,52 +247,61 @@ div.portfolioSelectorContainer{
 }
 
 div.portfolioMenuContainer{
-
     display: flex;
     justify-content: center;;
 }
 
-a.portfolio{
+input.folioSelector{
+    display: none;
+}
+
+div.portfolioMenuContainer label{
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
     background: #e5e5e5;
-    text-decoration: none;
     color: #6b6e72;
-    font-size: 1.1em;
-    height: 40px;
-    line-height: 40px;
-    margin: 0px;
-    padding: 0 10px 0 10px;
+    width: 100px;
+    text-align: center;
     position: relative;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
 }
 
-a.portfolio span.fa{
-    align-self: center;
-    position: relative;
-    bottom: -10px;
-}
-
-a.portfolio:first-child{
-    border-radius: 5px 0px 0px 5px;
-}
-
-a.portfolio:first-child:after{
-    font-family: FontAwesome;
-    content: "\f0d7";
-    position: absolute;
-    bottom: -30px;
-}
-
-a.portfolio:last-child{
-    border-radius: 0px 5px 5px 0px;
-}
-
-a.portfolio:hover{
+div.portfolioMenuContainer label:hover{
     background: #5dadd3;
     color: white;
+}
+
+div.portfolioMenuContainer label:nth-child(2){
+    border-radius: 3px 0 0 3px;
+}
+
+div.portfolioMenuContainer label:last-child{
+    border-radius: 0 3px 3px 0;
+}
+
+div.portfolioMenuContainer label::after{
+    font-family: FontAwesome;
+    content: "\f0d7";
+    color: #669db6;
+    position: absolute;
+    bottom: -22px;
+    left: 46px;
+    font-size: 1.5em;
+    display: none;
+}
+
+
+
+input:checked + label{
+    background: #5dadd3;
+    color: white;
+    box-sizing: border-box;
+    border-bottom: 3px #669db6 solid;
+
+}
+
+input:checked + label::after{
+    display: inline;
 }
 
 
@@ -311,18 +324,25 @@ div.zbra{
 }
 
 div.portfolioImgContainer{
-    width: 23%;
-    margin: 10px;
+    width: 21%;
+    margin: 2%;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 div.portfolioImgContainer img{
     width: 100%;
     display: block;
 }
+
+div.portfolioImgContainer img:hover{
+    opacity: 0.8;
+}
 /*-------------------- Footer--------------------*/
 
 footer{
     position: relative;
+    margin-bottom: 40px;
 }
 
 /*--- Maps ---*/
@@ -330,7 +350,6 @@ footer{
 div#mapContainer{
     width: 100%;
     height: 500px;
-    border: 1px solid green;
 }
 
 div#formContainer{
