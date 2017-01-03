@@ -7,6 +7,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/tablette.css" media="all and (max-width: 991px )" /><!-- and  (min-width: 768px)-->
+        <link rel="stylesheet" href="css/smartphone.css" media="all and (max-width: 768px)" />
         <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -129,7 +131,7 @@
                     </div>
                 </div>
                 <div class="portfolioContainer">
-                    <div class="zbra">
+                    <div class="portfolioImgWrapper">
                         <div class="portfolioImgContainer all creative notCorporate portfolio">
                             <a href="#" title="projet 1">
                                 <img src="images/portfolio/01.jpg" alt="portfolio image 1" />
@@ -177,20 +179,22 @@
             <footer id="footer">
                 <div id="mapContainer">
                 </div>
-                <div id="formContainer" class="contactElt">
-                    <h2 class="contactElt">Contact Info</h2>
-                    <div class="address contactElt">
-                        <h3 class="address">WebAgency SAS</h3>
-                        <span class="address">25 Rue d'Hauteville 75010 Paris</span><br />
-                        <span class="address">Tel : 01 02 03 04 05</span>
+                <div id="overlayFormContainer">
+                    <div id="formContainer" class="contactElt">
+                        <h2 class="contactElt">Contact Info</h2>
+                        <div class="address contactElt">
+                            <h3 class="address">WebAgency SAS</h3>
+                            <span class="address">25 Rue d'Hauteville 75010 Paris</span><br />
+                            <span class="address">Tel : 01 02 03 04 05</span>
+                        </div>
+                        <form class="contactElt">
+                              <input type="text" placeholder="Name" name="name" class="formElt" />
+                              <input type="email" placeholder="Email" name="email" class="formElt" />
+                              <input type="text" placeholder="Subject" name="subject" class="formElt" />
+                              <textarea placeholder="Message" name="message" class="formElt formTextArea" rows="8"></textarea>
+                              <input type="submit" value="Send Message" id="sendButton"/>
+                          </form>
                     </div>
-                    <form class="contactElt">
-                          <input type="text" placeholder="Name" name="name" class="formElt" />
-                          <input type="email" placeholder="Email" name="email" class="formElt" />
-                          <input type="text" placeholder="Subject" name="subject" class="formElt" />
-                          <textarea placeholder="Message" name="message" class="formElt formTextArea" rows="8"></textarea>
-                          <input type="submit" value="Send Message" id="sendButton"/>
-                      </form>
                 </div>
                 <div id="mapOverlay">
 

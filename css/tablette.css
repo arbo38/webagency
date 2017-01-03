@@ -1,0 +1,26 @@
+body{
+
+}
+
+div#pageWrapper{
+    width: 100%;
+}
+
+div.navigationBarContainer{
+    width: 100%;
+}
+
+div.portfolioImgWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div#formContainer{
+  width: 33%;
+}
+
+div#overlayFormContainer{
+    justify-content: center;
+}
