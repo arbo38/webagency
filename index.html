@@ -14,36 +14,46 @@
 
     <body>
         <div id="pageWrapper">
-            <header class="pageBlock">
+            <header class="pageBlock" id="accueil">
                 <div class="navigationBarContainer">
                     <div class="logoContainer">
                         <img src="images/logo.png" alt="Logo Web Agency" />
                     </div>
                     <nav>
-
-                            <a href="#">Accueil</a></li>
-                            <a href="#">Services</a></li>
-                            <a href="#">Portfolio</a></li>
-                            <a href="#mapContainer">Contact</a></li>
-
+                        <a href="#accueil">Accueil</a></li>
+                        <a href="#nosServices">Services</a></li>
+                        <a href="#nosProjets">Portfolio</a></li>
+                        <a href="#footer">Contact</a></li>
                     </nav>
                 </div>
                 <div class="carousselContainer">
-                    <img src="images/slider/bg1.jpg" alt="Petite fille" />
+                    <figure>
+                        <img src="images/slider/bg1.jpg" alt="Petite fille" />
+                        <img src="images/slider/bg2.jpg" alt="Petit garçon" />
+                        <img src="images/slider/bg1.jpg" alt="Petite fille" />
+                        <img src="images/slider/bg2.jpg" alt="Petit garçon" />
+                        <img src="images/slider/bg1.jpg" alt="Petite fille" />
+                    </figure>
+                    <div class="clear">
+                    </div>
+                    <div class="carousselButtonContainer">
+                        <button type="button" class="fa fa-angle-left"></span>
+                        <button type="button" class="fa fa-angle-right"></span>
+                    </div>
                     <div class="carousselOverlayContainer">
-                        <div class="carouselButtonRight"></div>
                         <div class="carouselOverlay">
-                            <h1>WEBAGENCY : L'AGENCE DE TOUS VOS PROJETS!</h1>
+                            <h1><span class="blue">WEBAGENCY</span> : L'AGENCE DE TOUS <br />VOS PROJETS !</h1>
                             <p>Vous avez un projet web? La WebAgency vous aide à le réaliser!</p>
                             <button type="button">Plus d'infos</button>
                         </div>
-                        <div class="carouselButtonLeft"></div>
                     </div>
-                    <div class="carouselPosition"></div>
+                    <div class="carouselPosition">
+                        <div class="carouselPositionFiller"></div>
+                    </div>
                 </div>
             </header>
 
-            <section class="pageBlock nosServices">
+            <section class="pageBlock" id="nosServices">
                 <div class="sectionTitreContainer">
                     <h2>NOS SERVICES</h2>
                     <div class="buttonSeparator"><span class="fa fa-circle"></span></div>
@@ -102,7 +112,7 @@
                 </div>
             </section>
 
-            <section class="pageBlock nosProjets">
+            <section class="pageBlock" id="nosProjets">
                 <div class="sectionTitreContainer">
                     <h2>NOS PROJETS</h2>
                     <div class="buttonSeparator"><span class="fa fa-circle"></span></div>
@@ -164,10 +174,8 @@
                 </div>
             </section>
 
-            <footer>
+            <footer id="footer">
                 <div id="mapContainer">
-
-
                 </div>
                 <div id="formContainer" class="contactElt">
                     <h2 class="contactElt">Contact Info</h2>
@@ -183,6 +191,11 @@
                           <textarea placeholder="Message" name="message" class="formElt formTextArea" rows="8"></textarea>
                           <input type="submit" value="Send Message" id="sendButton"/>
                       </form>
+                </div>
+                <div id="mapOverlay">
+
+                </div>
+                <div id="footerFiller">
                 </div>
 
             </footer>

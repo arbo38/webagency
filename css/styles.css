@@ -27,14 +27,77 @@ div#pageWrapper{
     width: 80%;
 }
 
+/*-------------------- ANIMATION CSS DU CAROUSSEL--------------------*/
+
+@keyframes carousselSlider {
+    0% { left: 0%;}
+    10% { left: 0%;}
+    15% { left: -100%;}
+    35% { left: -100%;}
+    40% { left: -200%;}
+    60% { left: -200%;}
+    65% { left: -300%;}
+    85% { left: -300%;}
+    90% { left: -400%;}
+    100% { left: -400%;}
+}
+
+@-webkit-keyframes carousselSlider {
+    0% { left: 0%;}
+    10% { left: 0%;}
+    15% { left: -100%;}
+    35% { left: -100%;}
+    40% { left: -200%;}
+    60% { left: -200%;}
+    65% { left: -300%;}
+    85% { left: -300%;}
+    90% { left: -400%;}
+    100% { left: -400%;}
+}
+
+@keyframes carousselPosition {
+    0% { left: 0%;}
+    10% { left: 0%;}
+    15% { left: 20%;}
+    35% { left: 20%;}
+    40% { left: 40%;}
+    60% { left: 40%;}
+    65% { left: 60%;}
+    85% { left: 60%;}
+    90% { left: 80%;}
+    100% { left: 80%;}
+}
+
+@-webkit-keyframes carousselPosition {
+    0% { left: 0%;}
+    10% { left: 0%;}
+    15% { left: 20%;}
+    35% { left: 20%;}
+    40% { left: 40%;}
+    60% { left: 40%;}
+    65% { left: 60%;}
+    85% { left: 60%;}
+    90% { left: 80%;}
+    100% { left: 80%;}
+}
 
 /*-------------------- HEADER--------------------*/
 header{
-    padding: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    background-color: #f2f2f2;
 }
 
 /*--- Navigation---*/
 div.navigationBarContainer{
+    position: fixed;
+    top: 0px;
+    opacity: 1;
+    height: 100px;
+    z-index: 9999;
+    width: 80%;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,56 +139,129 @@ nav a:hover{
 /*--- Carousel ---*/
 
 div.carousselContainer{
-    border: 3px solid green;
-    margin: 0px;
-    padding: 0px;
     position: relative;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
 }
 
-div.carousselContainer img{
+div.carousselContainer figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 25s carousselSlider infinite;
+    -webkit-animation: 25s carousselSlider infinite;
+}
+
+div.carousselContainer figure img{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+div.clear{
+    clear: both;
+}
+
+div.carousselOverlayContainer{
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.carousselButtonContainer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.carousselButtonContainer button{
+    color: white;
+    font-size: 1.3em;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    height: 50px;
+    width: 25px;
+    line-height: 50px;
+    text-align: center;
+}
+
+div.carousselButtonContainer button:nth-child(1){
+    color: white;
+    border-radius:  0 50px 50px 0;
+}
+
+div.carousselButtonContainer button:nth-child(2){
+    color: white;
+    border-radius: 50px 0 0 50px;
+}
+
+div.carouselOverlay{
+    margin-left: 15%;
+}
+
+h1{
+    font-weight: 700;
+}
+
+h1 span.blue{
+    color: #5aabd2;
+}
+
+div.carouselOverlay p{
+    font-weight: 600;
+}
+
+div.carouselOverlay button{
+  background-color: #5dadd3;
+  color: white;
+  padding: 6px 10px 6px 10px;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 0px 3px #669db6;
+  border: none;
+  margin-top: 10px;
+}
+
+div.carouselOverlay button:active{
+  background-color: white;
+  color: #5dadd3;
 }
 
 div.carouselPosition{
     width: 100%;
-    height: 10px;
+    height: 5px;
     background: black;
     position: absolute;
     bottom: 0px;
     z-index: 15;
+    opacity: 0.6;
 }
 
-div.carousselOverlayContainer{
+div.carouselPositionFiller{
+    height: 100%;
+    background: #5dadd3;
+    width: 20%;
     position: absolute;
-    top: 30%;
+    left: 0%;
+    animation: carousselPosition 25s infinite;
+    -webkit-animation: carousselPosition 25s infinite;
 }
 
-div.carouselOverlay{
 
-}
-
-h1{
-
-}
-
-div.carouselOverlay p{
-
-}
-
-div.carouselOverlay button{
-
-}
-
-div.carouselButtonRight{
-
-}
-
-div.carouselButtonLeft{
-
-}
 
 /*-------------------- Section I : Nos services--------------------*/
 
@@ -146,6 +282,7 @@ div.sectionTitreContainer{
 
 div.sectionTitreContainer h2{
     font-size: 2em;
+    margin-top: 100px;
 }
 
 div.buttonSeparator{
@@ -342,7 +479,7 @@ div.portfolioImgContainer img:hover{
 
 footer{
     position: relative;
-    margin-bottom: 40px;
+    padding-top: 100px;
 }
 
 /*--- Maps ---*/
@@ -350,13 +487,17 @@ footer{
 div#mapContainer{
     width: 100%;
     height: 500px;
+    position: relative;
+    z-index: -1;
 }
+
+/*--- Contact ---*/
 
 div#formContainer{
   border-radius: 3px;
   position: absolute;
   padding: 10px 0 10px 0;
-  top: 50px;
+  top: 150px;
   right: 150px;
   width: 22%;
   height: 400px;
@@ -364,6 +505,7 @@ div#formContainer{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  z-index: 10;
 }
 
 .contactElt{
@@ -371,7 +513,7 @@ div#formContainer{
 }
 
 div#formContainer h2{
-  margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 div.address{
@@ -389,7 +531,6 @@ h3.address{
 form{
     display: flex;
     flex-direction: column;
-
 }
 
 .formElt{
@@ -421,33 +562,20 @@ input#sendButton:active{
 
   background-color: white;
   color: #5dadd3;
-
 }
 
-/* TESTING */
-div.container{
-    width: 800px;
-    border: px solid red;
+/*--- Map Overlay ---*/
+
+div#mapOverlay{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: #5dadd3;
+    z-index: 0;
+    opacity: 0.4;
 }
 
-div.testImg{
-    width: 80%;
-    border: 2px solid black;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-div.testImg img{
-    padding: 0px;
-    margin: 0px;
-}
-
-div.testForme{
-    width: 50px;
-    height: 100px;
-    background-color: green;
-    border: 1px solid blue;
-    border-radius: 0 50px 50px 0;
+div#footerFiller{
+    height: 300px;
 }
