@@ -1,26 +1,50 @@
-body{
-
-}
+/*-------------------- PARAMETRES GENENERAUX--------------------*/
 
 div#pageWrapper{
-    width: 100%;
+    width: 100%;  /* sur les écrans de tablette et plus petit la page fait maintenant toute la largeur*/
 }
+
+/*-------------------- ANIMATION CSS DU CAROUSSEL--------------------*/
+
+/*-------------------- HEADER--------------------*/
+
+/*--- Navigation---*/
 
 div.navigationBarContainer{
-    width: 100%;
+    width: 100%; /* Ajustement de la taille de la barre de navigation à la nouvellle largeur de la page*/
 }
 
-div.portfolioImgWrapper{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+/*--- Carousel ---*/
+
+/*-------------------- Section I : Nos services--------------------*/
+
+/*--- Section I : Titre ---*/
+
+/*--- Section I : Corps ---*/
+
+/*-------------------- Section II : Nos Projets--------------------*/
+
+/*--- Section II : Titre ---*/
+    /* Paramètres hérité de la section I*/
+
+/*--- Section II : Corps ---*/
+
+    /*--- Menu Portfolio---*/
+
+    /*--- Portfolio ---*/
+
+/*-------------------- Footer--------------------*/
+
+/*--- Maps ---*/
+
+/*--- Contact ---*/
 
 div#formContainer{
-  width: 33%;
+  width: 33%;  /* Augmentation de la taille relative du formulaire pour les plus petits écran */
 }
 
 div#overlayFormContainer{
-    justify-content: center;
+    justify-content: center; /* Recentrage du formulaire de contact sur les petits écrans*/
 }
+
+/*--- Map Overlay ---*/

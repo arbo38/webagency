@@ -1,11 +1,24 @@
-/*
-Couleurs:
-    Bleu claire : #5dadd3 ;
-    Bleu foncé : #669db6 ;
-    Gris texte : #6e7071 ;
 
+    /* ______________________________PLAN DU FICHIER STYLE ______________________________*/
 
-*/
+    /*-------------------- PARAMETRES GENENERAUX--------------------*/
+    /*-------------------- ANIMATION CSS DU CAROUSSEL--------------------*/
+    /*-------------------- HEADER--------------------*/
+    /*--- Navigation---*/
+    /*--- Carousel ---*/
+    /*-------------------- Section I : Nos services--------------------*/
+    /*--- Section I : Titre ---*/
+    /*--- Section I : Corps ---*/
+    /*-------------------- Section II : Nos Projets--------------------*/
+    /*--- Section II : Titre ---*/
+        /* Paramètres hérité de la section I*/
+    /*--- Section II : Corps ---*/
+        /*--- Menu Portfolio---*/
+        /*--- Portfolio ---*/
+    /*-------------------- Footer--------------------*/
+    /*--- Maps ---*/
+    /*--- Contact ---*/
+    /*--- Map Overlay ---*/
 
 
 /*-------------------- PARAMETRES GENENERAUX--------------------*/
@@ -81,14 +94,16 @@ div#pageWrapper{
     100% { left: 80%;}
 }
 
-/*-------------------- HEADER--------------------*/
+/*-------------------- HEADER #f2f2f2--------------------*/
+
 header{
     padding-top: 100px;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
 /*--- Navigation---*/
+
 div.navigationBarContainer{
     position: fixed;
     top: 0px;
@@ -113,7 +128,6 @@ nav{
     height: 100px;
     padding: 0px;
     display: flex;
-
 }
 
 nav a{
@@ -124,7 +138,6 @@ nav a{
     text-decoration: none;
     color: #341c1d;
     font-family: sans-serif;
-
 }
 
 nav a:hover{
@@ -226,19 +239,19 @@ div.carouselOverlay p{
 }
 
 div.carouselOverlay button{
-  background-color: #5dadd3;
-  color: white;
-  padding: 6px 10px 6px 10px;
-  font-weight: bold;
-  border-radius: 2px;
-  box-shadow: 0px 3px #669db6;
-  border: none;
-  margin-top: 10px;
+    background-color: #5dadd3;
+    color: white;
+    padding: 6px 10px 6px 10px;
+    font-weight: bold;
+    border-radius: 2px;
+    box-shadow: 0px 3px #669db6;
+    border: none;
+    margin-top: 10px;
 }
 
 div.carouselOverlay button:active{
-  background-color: white;
-  color: #5dadd3;
+    background-color: white;
+    color: #5dadd3;
 }
 
 div.carouselPosition{
@@ -261,15 +274,15 @@ div.carouselPositionFiller{
     -webkit-animation: carousselPosition 25s infinite;
 }
 
-
+div.headerBottom{
+    height: 80px;
+    background: linear-gradient(white, #e2e2e2);
+}
 
 /*-------------------- Section I : Nos services--------------------*/
 
 section.pageBlock{
     padding: 20px 0 20px 0;
-}
-
-section.nosServices{
 }
 
 /*--- Section I : Titre ---*/
@@ -283,10 +296,6 @@ div.sectionTitreContainer{
 div.sectionTitreContainer h2{
     font-size: 2em;
     margin-top: 100px;
-}
-
-div.buttonSeparator{
-
 }
 
 div.sectionTitreContainer p{
@@ -308,9 +317,6 @@ div.sectionMainLeft{     /* Partie gauche*/
     align-items: center;
 }
 
-div.sectionMainLeft img{
-}
-
 div.sectionMainRight{   /* Partie droite*/
     width: 50%;
     align-self: flex-end;
@@ -330,13 +336,6 @@ div.illustration, div.separator, div.presentation{
     margin: 6px;
 }
 
-div.illustration{
-}
-
-div.separator{
-
-}
-
 span.fa{
     color: #5dadd3;
 }
@@ -344,7 +343,6 @@ span.fa{
 div.illustration span{
     font-size: 1.5em;
 }
-
 
 div.presentation{
     width: 90%;
@@ -362,16 +360,14 @@ p.sectionMainRight{
 
 /*-------------------- Section II : Nos Projets--------------------*/
 
-section.nosProjets{
+section.ourProjects{
     background-color: #f5f5f5;
 }
 
 /*--- Section II : Titre ---*/
-    /* Paramètres identique à section I*/
+    /* Paramètres hérité de la section I*/
 
-
-section.nosProjets div.sectionTitreContainer{
-
+section.ourProjects div.sectionTitreContainer{
 }
 
 /*--- Section II : Corps ---*/
@@ -385,7 +381,7 @@ div.portfolioSelectorContainer{
 
 div.portfolioMenuContainer{
     display: flex;
-    justify-content: center;;
+    justify-content: center;
 }
 
 input.folioSelector{
@@ -427,23 +423,16 @@ div.portfolioMenuContainer label::after{
     display: none;
 }
 
-
-
 input:checked + label{
     background: #5dadd3;
     color: white;
     box-sizing: border-box;
     border-bottom: 3px #669db6 solid;
-
 }
 
 input:checked + label::after{
     display: inline;
 }
-
-
-
-
 
     /*--- Portfolio ---*/
 
@@ -475,6 +464,7 @@ div.portfolioImgContainer img{
 div.portfolioImgContainer img:hover{
     opacity: 0.8;
 }
+
 /*-------------------- Footer--------------------*/
 
 footer{
@@ -531,7 +521,7 @@ div.address{
   margin-top: 0px;
   margin-bottom: 0px;
   color: #6e7071;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 h3.address{
@@ -550,11 +540,6 @@ form{
   padding: 5px 8px 5px 8px;
   border-radius: 4px;
   border: 1px solid #a9abab;
-
-}
-
-.formTextArea{
-
 }
 
 input#sendButton{
@@ -570,7 +555,6 @@ input#sendButton{
 }
 
 input#sendButton:active{
-
   background-color: white;
   color: #5dadd3;
 }

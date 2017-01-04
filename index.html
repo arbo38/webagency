@@ -10,12 +10,11 @@
         <link rel="stylesheet" href="css/tablette.css" media="all and (max-width: 991px )" /><!-- and  (min-width: 768px)-->
         <link rel="stylesheet" href="css/smartphone.css" media="all and (max-width: 768px)" />
         <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
     </head>
 
     <body>
         <div id="pageWrapper">
+<!--________________________HEADER________________________-->
             <header class="pageBlock" id="accueil">
                 <div class="navigationBarContainer">
                     <div class="logoContainer">
@@ -23,8 +22,8 @@
                     </div>
                     <nav>
                         <a href="#accueil">Accueil</a></li>
-                        <a href="#nosServices">Services</a></li>
-                        <a href="#nosProjets">Portfolio</a></li>
+                        <a href="#ourServices">Services</a></li>
+                        <a href="#ourProjects">Portfolio</a></li>
                         <a href="#footer">Contact</a></li>
                     </nav>
                 </div>
@@ -53,14 +52,16 @@
                         <div class="carouselPositionFiller"></div>
                     </div>
                 </div>
+                <div class="headerBottom">
+                </div>
             </header>
-
-            <section class="pageBlock" id="nosServices">
+<!--________________________SECTION I : Nos Services________________________-->
+            <section class="pageBlock" id="ourServices">
                 <div class="sectionTitreContainer">
                     <h2>NOS SERVICES</h2>
                     <div class="buttonSeparator"><span class="fa fa-circle"></span></div>
                     <p>
-                        Lorem ipsum solor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam.
+                        Notre agence vous propose des services web de grande qualité grâce à ces experts dans les domaines de l'expérience utilisateur, de l'interface utilisateur et du référencement.
                     </p>
                 </div>
                 <div class="sectionMainContainer">
@@ -78,7 +79,7 @@
                             <div class="presentation">
                                 <h3 class="sectionMainRight">UX design</h3>
                                 <p class="sectionMainRight">
-                                    Lorem ipsum solor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua.
+                                    Etre capable de créer un expérience vraiment unique à votre utilisateur. Cette expérience doit être le fruit de recherche sur les attentes, les besoins et les habitudes de votre cible.
                                 </p>
                             </div>
                         </div>
@@ -92,7 +93,7 @@
                             <div class="presentation">
                                 <h3 class="sectionMainRight">UI design</h3>
                                 <p class="sectionMainRight">
-                                    Lorem ipsum solor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua.
+                                    Pour que l'expérience utilisateur soit réussie, l'interface utilisateur de votre site doit être réussie. La clarté, l'originalité et la praticité sont les maitres mots.
                                 </p>
                             </div>
                         </div>
@@ -106,20 +107,21 @@
                             <div class="presentation">
                                 <h3 class="sectionMainRight">SEO</h3>
                                 <p class="sectionMainRight">
-                                    Lorem ipsum solor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua.
+                                    Enfin, en tant que vecteur de communication, votre site internet doit être source de notoriété et
+                                    pour cela il doit être visible. C'est pourquoi le référencement est un point crucial dans le développement de votre site internet et que nous y attachons beaucoup d'importance.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section class="pageBlock" id="nosProjets">
+<!--________________________SECTION II : Nos Projets________________________-->
+            <section class="pageBlock" id="ourProjects">
                 <div class="sectionTitreContainer">
                     <h2>NOS PROJETS</h2>
                     <div class="buttonSeparator"><span class="fa fa-circle"></span></div>
                     <p>
-                        Lorem ipsum solor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam.
+                        Ne nous croyez pas sur parole, explorez plutôt nos projets et regardez de quoi nous sommes capable!
                     </p>
                 </div>
                 <div class="portfolioSelectorContainer">
@@ -175,7 +177,7 @@
                     </div>
                 </div>
             </section>
-
+<!--________________________FOOTER________________________-->
             <footer id="footer">
                 <div id="mapContainer">
                 </div>
@@ -201,21 +203,18 @@
                 </div>
                 <div id="footerFiller">
                 </div>
-
             </footer>
+        </div> <!-- Fin du pageWrapper -->
 
-        </div>
-
-
-
+<!--________________________APPEL DES SCRIPTS________________________-->
+        <script src="js/webAgency.js"></script>
+        <script src="js/jquery-3.1.1.js"></script>
         <script>
             $(document).ready(function(){
                 webAgency();
             });
-
-        </script>
-        <script src="js/webAgency.js">
         </script>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
     </body>
+
 </html>
